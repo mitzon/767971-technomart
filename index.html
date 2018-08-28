@@ -6,16 +6,16 @@
   </head>
   <body>
   	<header class="main-header">
-  		<section class="main-header-top">
+  		<div class="main-header-top">
   			<a class="main-header-logo">Техномарт</a>
   			<form class="search" method="get" action="https://echo.htmlacademy.ru">
-  				<input type="search" name="q" aria-label="Поиск по сайту" placeholder="Поиск:">
+  				<input type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск:">
   			</form>
   			<a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
   			<a class="shopping-cart" href="shopping-cart.html">Корзина: 0</a>
   			<a href="#">Оформить заказ</a>
-  		</section>
-  		<section class="main-header-info">
+  		</div>
+  		<div class="main-header-info">
   			<div class="main-header-heading">
   				<h1 >Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   			</div>
@@ -43,7 +43,7 @@
   					</li>
   				</ul>
   			</div>
-  		</section>
+  		</div>
   		<nav class="main-navigation">
   			<ul class="navigation-list">
   				<li><a href="index.html">Главная</a></li>
@@ -90,6 +90,18 @@
   					<p>Соседям на радость!</p>
   					<a class="button slide-button" href="catalog.html">Открыть каталог</a>
   				</div>
+  				<ul class="slides-switches">
+  					<li class="slide-radio">
+  						<button class="slide-btn">
+  							первый слайд
+  						</button>
+  					</li>
+  					<li class="slide-radio">
+  						<button class="slide-btn">
+  							второй слайд
+  						</button>
+  					</li>
+  				</ul>
   			</div>
   		</section>
   		<section class="popular-goods">
@@ -193,7 +205,7 @@
   			<a class="button contacts__button" href="company.html">Заблудились? Напишите нам!</a>
   		</section>
   		<footer class="main-footer">
-  			<section class="footer-top">
+  			<div class="footer-top">
 	  			<a class="main-footer__logo">Техномарт</a>
 	  			<nav class="footer-navigation">
 	  				<ul>
@@ -214,8 +226,8 @@
 	  				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 					+7 (812) 555-05-55
 				</p>
-			</section>
-			<section class="footer-bottom">
+			</div>
+			<div class="footer-bottom">
 				<p class="footer-copyright">
 					© 2010–2017 Компания «Техномарт»<br>
 					Все права защищены
@@ -235,9 +247,10 @@
       				<b>Разработано -</b>
       				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       			</p>
-			</section>
+			</div>
   		</footer>
   		<section class="modal modal-write-us">
+  			<h2 class="visually-hidden">Напишите нам</h2>
   			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
   				<label>
   					Ваше имя:
