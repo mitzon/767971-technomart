@@ -8,11 +8,11 @@
   	<header class="main-header">
   		<section class="main-header-top">
   			<a class="main-header-logo">Техномарт</a>
-  			<form>
-  				<input type="search" name="q" placeholder="Поиск:">
+  			<form class="search" method="get" action="https://echo.htmlacademy.ru">
+  				<input type="search" name="q" aria-label="Поиск по сайту" placeholder="Поиск:">
   			</form>
-  			<a class="bookmarks">Закладки: 0</a>
-  			<a class="shopping-cart">Корзина: 0</a>
+  			<a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
+  			<a class="shopping-cart" href="shopping-cart.html">Корзина: 0</a>
   			<a href="#">Оформить заказ</a>
   		</section>
   		<section class="main-header-info">
@@ -25,14 +25,22 @@
   			</div>
   			<div class="user-navigation">
   				<ul>
-  					<li>Войти</li>
-  					<li>Регистрация</li>
+  					<li>
+  						<a class="login-link" href="login.html">Войти</a>
+  					</li>
+  					<li>
+  						<a class="registration-link" href="registration.html">Регистрация</a>
+  					</li>
   				</ul>
   				<!-- после входа -->
   				<p><a class="username">Равшан Джамшутович</a></p>
   				<ul>
-  					<li><a class="orders">Мои заказы</a></li>
-  					<li><a class="profile">Личный кабинет</a></li>
+  					<li>
+  						<a class="orders-link" href="orders.html">Мои заказы</a>
+  					</li>
+  					<li>
+  						<a class="profile-link" href="profile.html">Личный кабинет</a>
+  					</li>
   				</ul>
   			</div>
   		</section>
@@ -90,26 +98,34 @@
   			<ul class="popular-goods__list">
   				<li>
   					<img src="img/bosch-bfg-9000.jpg" width="220" height="150" alt="Перфоратор BOSCH BFG 9000">
-  					<h3 class="good-heading">Перфоратор BOSCH BFG 9000</h3>
-  					<p class="old-price">32500</p>
-  					<p class="new-price">25500</p>
+  					<a href="bosch-bfg-9000.html">
+	  					<h3 class="good-heading">Перфоратор BOSCH BFG 9000</h3>
+	  					<p class="old-price">32500</p>
+	  					<p class="new-price">25500</p>
+  					</a>
   				</li>
   				<li>
   					<img src="img/bosch-bfg-3000.jpg" width="220" height="150" alt="Перфоратор BOSCH BFG 3000">
-  					<h3 class="good-heading">Перфоратор BOSCH BFG 3000</h3>
-  					<p class="old-price">22500</p>
-  					<p class="new-price">15500</p>
+  					<a href="bosch-bfg-3000.html">
+	  					<h3 class="good-heading">Перфоратор BOSCH BFG 3000</h3>
+	  					<p class="old-price">22500</p>
+	  					<p class="new-price">15500</p>
+  					</a>
   				</li>
   				<li>
   					<img src="img/bosch-bfg-6000.jpg" width="220" height="150" alt="Перфоратор BOSCH BFG 6000">
-  					<h3 class="good-heading">Перфоратор BOSCH BFG 6000</h3>
-  					<p class="old-price">30500</p>
-  					<p class="new-price">25500</p>
+  					<a href="bosch-bfg-6000.html">
+	  					<h3 class="good-heading">Перфоратор BOSCH BFG 6000</h3>
+	  					<p class="old-price">30500</p>
+	  					<p class="new-price">25500</p>
+	  				</a>
   				</li>
   				<li>
   					<img src="img/bosch-bfg-2000.jpg" width="220" height="150" alt="Перфоратор BOSCH BFG 2000">
-  					<h3 class="good-heading">Перфоратор BOSCH BFG 2000</h3>
-  					<p class="new-price">12500</p>
+  					<a href="bosch-bfg-2000.html">
+	  					<h3 class="good-heading">Перфоратор BOSCH BFG 2000</h3>
+	  					<p class="new-price">12500</p>
+	  				</a>
   				</li>
   			</ul>
   		</section>
@@ -118,28 +134,28 @@
   			<a class="button popular-brands__button" href="catalog.html">Все производители</a>
   			<ul class="popular-brands__list">
   				<li>
-  					<img src="img/bosch.jpg" width="126" height="37" alt="BOSCH">
+  					<a href="catalog.html"><img src="img/bosch.jpg" width="126" height="37" alt="BOSCH"></a>
   				</li>
   				<li>
-  					<img src="img/makita.jpg" width="123" height="40" alt="Makita">
+  					<a href="catalog.html"><img src="img/makita.jpg" width="123" height="40" alt="Makita"></a>
   				</li>
   				<li>
-  					<img src="img/dewalt.jpg" width="146" height="44" alt="DeWALT">
+  					<a href="catalog.html"><img src="img/dewalt.jpg" width="146" height="44" alt="DeWALT"></a>
   				</li>
   				<li>
-  					<img src="img/interskol.jpg" width="184" height="32" alt="Интерскол">
+  					<a href="catalog.html"><img src="img/interskol.jpg" width="184" height="32" alt="Интерскол"></a>
   				</li>
   				<li>
-  					<img src="img/hitachi.jpg" width="169" height="31" alt="Hitachi">
+  					<a href="catalog.html"><img src="img/hitachi.jpg" width="169" height="31" alt="Hitachi"></a>
   				</li>
   				<li>
-  					<img src="img/lg.jpg" width="121" height="73" alt="LG">
+  					<a href="catalog.html"><img src="img/lg.jpg" width="121" height="73" alt="LG"></a>
   				</li>
   				<li>
-  					<img src="img/aeg.jpg" width="151" height="96" alt="AEG">
+  					<a href="catalog.html"><img src="img/aeg.jpg" width="151" height="96" alt="AEG"></a>
   				</li>
   				<li>
-  					<img src="img/metabo.jpg" width="155" height="55" alt="Metabo">
+  					<a href="catalog.html"><img src="img/metabo.jpg" width="155" height="55" alt="Metabo"></a>
   				</li>
   			</ul>
   		</section>
@@ -222,14 +238,28 @@
 			</section>
   		</footer>
   		<section class="modal modal-write-us">
-  			<p>Ваше имя:</p>
-  			<p>Ваш e-mail:</p>
-  			<p>Текст письма:</p>
-  			<button>Отправить</button>
-  			<span class="modal-close">x</span>
+  			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+  				<label>
+  					Ваше имя:
+  					<input type="text" name="name" value="" placeholder="Имя Фамилия">
+	  			</label>
+	  			<label>
+	  				Ваш e-mail:
+	  				<input type="email" name="email" value="" placeholder="email@example.com">
+	  			</label>
+	  			<label>
+	  				Текст письма:
+	  				<textarea name="message" placeholder="В свободной форме"></textarea>
+	  			</label>
+	  			
+	  			<button class="button" type="submit">Отправить</button>
+	  			<button class="modal-close" type="button">Закрыть</button>
+  			</form>
   		</section>
   		<section class="modal modal-map">
-      		<span class="modal-close">x</span> 
+  			<h2 class="visually-hidden">Как до нас добраться</h2>
+  			<img src="img/map-big.png" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      		<button class="modal-close" type="button">Закрыть</button> 
       	</section>
   	</main>
   </body>
