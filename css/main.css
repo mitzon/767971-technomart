@@ -24,6 +24,7 @@ a {
 	font-size: 24px;
  	line-height: 24px;
     color: #ffffff;
+    box-shadow: 0 5px #b52933;
 
     background-color: #ee3643;
 }
@@ -70,6 +71,15 @@ a {
  	line-height: 18px;
 	color: #ffffff; 
 } 
+
+	.search input:hover {
+		background-color: #212a3a;
+	}
+
+	.search input:focus {
+		color: #000000;
+		background-color: #ffffff;
+	}
 
 .header-link {
 	font-size: 17px;
