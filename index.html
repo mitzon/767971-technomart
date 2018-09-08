@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
   </head>
@@ -15,7 +15,7 @@
     			<form class="search" method="get" action="https://echo.htmlacademy.ru">
     				  <input type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск:" onfocus="this.closest('.search').classList.add('search--focus');" onblur="this.closest('.search').classList.remove('search--focus');">
     			</form>
-    			<a class="header-link bookmarks header-link--active" href="bookmarks.html">Закладки: 0</a>
+    			<a class="header-link bookmarks" href="bookmarks.html">Закладки: 0</a>
     			<a class="header-link shopping-cart" href="shopping-cart.html">Корзина: 0</a>
     			<a class="header-link make-order" href="#">Оформить заказ</a>
         </div>
@@ -30,16 +30,16 @@
 	  				<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 	  			</div>
 	  			<div class="user-navigation">
-	  				<!-- <ul>
+	  				<ul class="user-navigation-list">
 	  					<li>
 	  						<a class="user-nav-button login-link" href="login.html">Войти</a>
 	  					</li>
 	  					<li>
 	  						<a class="user-nav-button registration-link" href="registration.html">Регистрация</a>
 	  					</li>
-	  				</ul> -->
+	  				</ul>
 	  				<!-- после входа -->
-	  				<div class="profile-links">
+	  				<div class="profile-links hidden">
               <a class="username" href="profile.html">Равшан Джамшутович</a>
               <a class="logout" href="logout.html"><span class="visually-hidden">Выйти</span>
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -52,7 +52,7 @@
                   </svg>
               </a>
             </div>
-	  				<ul class="profile-list">
+	  				<ul class="profile-list hidden">
 	  					<li>
 	  						<a class="orders-link" href="orders.html">Мои заказы</a>
 	  					</li>
@@ -96,11 +96,11 @@
         </div>
         <div class="offers-second-line">
     			<div class="slider">
-    				<!-- <div class="slide first-slide">
+    				<div class="slide first-slide hidden">
     					<b>Перфораторы</b>
     					<p>Настоящие мужские игрушки</p>
     					<a class="button slide-button" href="catalog.html">Открыть каталог</a>
-    				</div> -->
+    				</div>
     				<div class="slide second-slide">
     					<b>Дрели</b>
     					<p>Соседям на радость!</p>
@@ -147,8 +147,8 @@
   			<ul class="popular-goods__list">
   				<li class="popular-goods__item">
             <div class="actions">
-              <a href="#" class="action-buy">Купить</a>
-              <a href="#" class="action-bookmark">В закладки</a>
+              <a href="shopping-cart.html" class="action-buy">Купить</a>
+              <a href="bookmarks.html" class="action-bookmark">В закладки</a>
             </div>
   					<img src="img/bosch-bfg-9000.jpg" width="200" height="150" alt="Перфоратор BOSCH BFG 9000">
   					<a href="bosch-bfg-9000.html">
@@ -161,8 +161,8 @@
   				</li>
   				<li class="popular-goods__item">
             <div class="actions">
-              <a href="#" class="action-buy">Купить</a>
-              <a href="#" class="action-bookmark">В закладки</a>
+              <a href="shopping-cart.html" class="action-buy">Купить</a>
+              <a href="bookmarks.html" class="action-bookmark">В закладки</a>
             </div>
   					<img src="img/bosch-bfg-3000.jpg" width="200" height="150" alt="Перфоратор BOSCH BFG 3000">
   					<a href="bosch-bfg-3000.html">
@@ -175,8 +175,8 @@
   				</li>
   				<li class="popular-goods__item">
             <div class="actions">
-              <a href="#" class="action-buy">Купить</a>
-              <a href="#" class="action-bookmark">В закладки</a>
+              <a href="shopping-cart.html" class="action-buy">Купить</a>
+              <a href="bookmarks.html" class="action-bookmark">В закладки</a>
             </div>
   					<img src="img/bosch-bfg-6000.jpg" width="200" height="150" alt="Перфоратор BOSCH BFG 6000">
   					<a href="bosch-bfg-6000.html">
@@ -189,8 +189,8 @@
   				</li>
   				<li class="popular-goods__item">
             <div class="actions">
-              <a href="#" class="action-buy">Купить</a>
-              <a href="#" class="action-bookmark">В закладки</a>
+              <a href="shopping-cart.html" class="action-buy">Купить</a>
+              <a href="bookmarks.html" class="action-bookmark">В закладки</a>
             </div>
   					<img src="img/bosch-bfg-2000.jpg" width="200" height="150" alt="Перфоратор BOSCH BFG 2000">
   					<a href="bosch-bfg-2000.html">
@@ -244,15 +244,15 @@
       				<li class="service-list-item">Гарантия</li>
       				<li class="service-list-item">Кредит</li>
       			</ul>
-            <!-- <div class="service-description delivery-service">
+            <div class="service-description delivery-service">
         			<h3>Доставка</h3>
         			<p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-            </div> -->
-            <!-- <div class="service-description guarantee-service">
+            </div>
+            <div class="service-description guarantee-service hidden">
               <h3>Гарантия</h3>
         			<p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
-            </div> -->
-            <div class="service-description credit-service">
+            </div>
+            <div class="service-description credit-service hidden">
         			<h3>Кредит</h3>
         			<p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
         			<a class="button service-button" href="credit.html">Отправить заявку</a>
@@ -275,7 +275,7 @@
     		<section class="contacts">
     			<h2>Контакты</h2>
     			<p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-    			<a href="map.html"><img src="img/map.png" width="300" height="158" alt="карта"></a>
+    			<a class="map-link" href="map.html"><img src="img/map.png" width="300" height="158" alt="карта"></a>
     			<a class="button contacts__button" href="company.html">Заблудились? Напишите нам!</a>
     		</section>
       </div>
@@ -384,13 +384,26 @@
           <div class="form-button">
             <button class="button write-us-button" type="submit">Отправить</button>
           </div>
-          <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <button class="modal-close modal-write-us-close" type="button"><span class="visually-hidden">Закрыть</span></button>
         </form>
       </section>
       <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.323055%2C59.938631&z=17&mode=search&text=%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2019&sll=30.315868%2C59.939095&sspn=1.009369%2C0.294235" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"><img src="img/map-big.png" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
-          <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button> 
+        <button class="modal-close modal-map-close" type="button"><span class="visually-hidden">Закрыть</span></button> 
+      </section>
+      <section class="modal cart-add">
+        <h2>Товар добавлен в корзину!</h2>
+        <div class="cart-add-buttons">
+          <a class="button modal-order" href="shopping-cart.html">Оформить заказ</a>
+          <a class="button modal-continue">Продолжить покупки</a>
+        </div>
+          <button class="modal-close modal-cart-close" type="button"><span class="visually-hidden">Закрыть</span></button> 
         </section>
+        <script src="js/scripts.min.js"></script>
+        <script>
+          initIndex ();
+          initCommon ();
+        </script>
   </body>
 </html>
