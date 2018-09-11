@@ -1422,6 +1422,7 @@ input[type="radio"].visually-hidden {
 
 .footer-company-nav a:active,
 	.footer-goods-nav a:active {
+	text-decoration: none;
     opacity: 0.5;
 }
 
