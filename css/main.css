@@ -431,6 +431,8 @@ input[type="radio"].visually-hidden {
 }
 
 .profile-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1139,6 +1141,7 @@ input[type="radio"].visually-hidden {
     text-transform: none;
     color: #ffffff;
     background-color: #32425c;
+    cursor: pointer;
 }
 
 .service-list-item:first-child {
@@ -1422,7 +1425,7 @@ input[type="radio"].visually-hidden {
 
 .footer-company-nav a:active,
 	.footer-goods-nav a:active {
-	text-decoration: none;
+    text-decoration: none;
     opacity: 0.5;
 }
 
@@ -1773,7 +1776,11 @@ input[type="radio"].visually-hidden {
 }
 
 .range-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 220px;
     margin-bottom: 9px;
@@ -1997,7 +2004,6 @@ input[type="radio"].visually-hidden {
     height: 88px;
     padding: 40px 0;
     background-color: rgba(255,255,255, 1);
-    z-index: 3;
 }
 
 .action-buy,
@@ -2199,6 +2205,7 @@ input[type="radio"].visually-hidden {
     line-height: 38px;
     color: #000000;
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 .modal-continue:hover {
@@ -2319,6 +2326,7 @@ input[type="radio"].visually-hidden {
 
 .modal-close {
     position: absolute;
+    z-index: 5;
     width: 21px;
     height: 21px;
     top: 9px;
@@ -2326,6 +2334,7 @@ input[type="radio"].visually-hidden {
     border: 0;
     background-color: transparent;
     background: url("../img/cross-icon.svg");
+    cursor: pointer;
 }
 
 .modal-map {
@@ -2334,6 +2343,21 @@ input[type="radio"].visually-hidden {
     left: 50%;
     margin-left: -470px;
     max-width: 940px;
+}
+
+.modal-map iframe {
+    position: relative;
+    z-index: 5;
+    border: none;
+    -webkit-box-shadow: 0 5px 20px 5px rgba(41, 52, 73, 0.5);
+    box-shadow: 0 5px 20px 5px rgba(41, 52, 73, 0.5);
+}
+
+.modal-map a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .modal-map img {
