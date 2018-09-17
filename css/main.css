@@ -718,7 +718,8 @@ input[type="radio"].visually-hidden {
 
 .slide p {
     margin: 5px 0 0;
-    font: 18px/24px "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: normal;
     text-transform: none;
     color: #ffffff;
@@ -769,7 +770,7 @@ input[type="radio"].visually-hidden {
 
 .slide-radio:last-child {
     top: 114px;
-    right: 25px;
+    right: 19px;
 }
 
 .slide-btn {
@@ -1244,7 +1245,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     width: 940px;
     padding: 0 10px;
-    margin-bottom: 88px;
+    margin-bottom: 85px;
 }
 
 .about-company {
