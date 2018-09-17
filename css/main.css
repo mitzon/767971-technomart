@@ -1351,7 +1351,7 @@ input[type="radio"].visually-hidden {
 
 .footer-top {
     background-color: #32425c;
-    padding-bottom: 51px;
+    padding-bottom: 50px;
 }
 
 .top-container {
@@ -1383,6 +1383,7 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts {
     margin: 0;
+    margin-left: 2px;
     font-size: 18px;
     line-height: 24px;
     text-transform: none;
@@ -1401,7 +1402,6 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin-bottom: 31px;
     font-size: 18px;
     line-height: 24px;
     text-transform: none;
@@ -1410,6 +1410,7 @@ input[type="radio"].visually-hidden {
 
 .footer-company-nav {
     margin-top: 37px;
+    margin-bottom: 34px;
 }
 
 .footer-company-nav li {
@@ -1458,7 +1459,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 30px 10px 28px;
+    padding: 34px 10px 31px;
     margin: 0 auto;
 }
 
@@ -1511,7 +1512,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-email {
-    margin-left: 117px;
+    margin-left: 116px;
 }
 
 .footer-developer {
@@ -1868,7 +1869,7 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
     width: 140px;
-    margin-top: 78px;
+    margin-top: 80px;
     font: 13px/34px "PT Sans", Arial, sans-serif;
     text-align: center;
     text-transform: uppercase;
