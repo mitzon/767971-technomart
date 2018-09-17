@@ -133,7 +133,7 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 }
 
-.search div:hover {
+.search:hover {
     background-color: #212a3a;
 }
 
@@ -252,8 +252,8 @@ input[type="radio"].visually-hidden {
     display: -ms-flexbox;
     display: flex;
     width: 890px;
-    padding: 45px 10px 0 60px;
-    margin-bottom: 44px;
+    padding: 48px 5px 0 60px;
+    margin-bottom: 38px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -270,7 +270,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-contacts {
     width: 270px;
-    margin-left: 71px;
+    margin-left: 72px;
 }
 
 .main-header-contacts p {
@@ -280,7 +280,7 @@ input[type="radio"].visually-hidden {
 .phone {
     position: relative;
     padding: 9px 0;
-    padding-left: 72px;
+    padding-left: 70px;
     font-size: 21px;
     line-height: 21px;
     color: #ee3643;
@@ -297,7 +297,8 @@ input[type="radio"].visually-hidden {
     background: url("../img/icon-phone.svg") no-repeat;
 }
 
-.address {
+.main-header-contacts .address {
+    margin-top: 3px;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
@@ -388,8 +389,8 @@ input[type="radio"].visually-hidden {
     position: absolute;
     width: 20px;
     height: 18px;
-    top: 14px;
-    left: 14px;
+    top: 12px;
+    left: 12px;
     background: url("../img/icon-user.svg") no-repeat;
     opacity: 0.3;
 }
@@ -438,18 +439,18 @@ input[type="radio"].visually-hidden {
     -ms-flex-align: center;
     align-items: center;
     margin: 0;
-    margin-top: 2px;
+    margin-top: 5px;
     padding: 0;
     list-style: none;
 }
 
 .profile-list li:first-child {
-    padding-left: 18px;
+    padding-left: 16px;
     padding-right: 15px;
 }
 
 .profile-list li:last-child {
-    padding-left: 15px;
+    padding-left: 12px;
 }
 
 .dot {
@@ -952,7 +953,7 @@ input[type="radio"].visually-hidden {
 }
 
 .old-price {
-    margin: 8px auto;
+    margin: 8px auto 11px;
     font: 17px/18px "PT Sans", "Arial", sans-serif;
     font-weight: bold;
     text-decoration: line-through;
@@ -985,7 +986,7 @@ input[type="radio"].visually-hidden {
 }
 
 .no-old-price {
-    margin-top: 32px;
+    margin-top: 38px;
 }
 
 .popular-brands {
@@ -1049,6 +1050,8 @@ input[type="radio"].visually-hidden {
     width: 220px;
     height: 145px;
     border: 1px solid #e5e5e5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .popular-brands__list li:hover {
@@ -1085,12 +1088,12 @@ input[type="radio"].visually-hidden {
 .service-container {
     position: relative;
     width: 940px;
-    padding: 63px 10px 97px;
+    padding: 63px 10px 100px;
     margin: 0 auto;
 }
 
 .service-heading {
-    margin: 0 0 30px;
+    margin: 0 0 28px;
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
@@ -1178,8 +1181,8 @@ input[type="radio"].visually-hidden {
     position: absolute;
     width: 468px;
     height: 261px;
-    bottom: 0;
-    right: 0;
+    bottom: -3px;
+    right: 11px;
     background: url("../img/delivery.png") no-repeat;
 }
 
@@ -1241,7 +1244,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     width: 940px;
     padding: 0 10px;
-    margin-bottom: 86px;
+    margin-bottom: 88px;
 }
 
 .about-company {
@@ -1256,20 +1259,25 @@ input[type="radio"].visually-hidden {
 }
 
 .about-company p {
-    margin-top: 30px;
+    margin-top: 24px;
     font: 13px/24px "PT Sans", Arial, sans-serif;
     text-transform: none;
 }
 
+.about-company p:nth-child(2) {
+    margin-top: 27px;
+}
+
 .about-company-list {
     list-style: none;
-    margin-bottom: 34px;
+    margin-bottom: 37px;
+    margin-top: 21px;
     padding-left: 36px;
 }
 
 .about-company-list li {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 20px;
     font-weight: normal;
@@ -1282,7 +1290,7 @@ input[type="radio"].visually-hidden {
     width: 25px;
     height: 2px;
     left: -36px;
-    top: 8px;
+    top: 10px;
     background-color: #ee3643;
 }
 
@@ -1313,13 +1321,13 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts p {
-    margin: 30px 0;
+    margin: 27px 0 32px;
     font: 13px/24px "PT Sans", Arial, sans-serif;
     text-transform: none;
 }
 
 .contacts img {
-    margin-bottom: 28px;
+    margin-bottom: 36px;
 }
 
 .contacts__button {
@@ -1364,7 +1372,7 @@ input[type="radio"].visually-hidden {
 .main-footer__logo {
     display: block;
     width: 220px;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
     text-align: center;
     font-size: 30px;
     line-height: 63px;
@@ -1379,6 +1387,11 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
     text-transform: none;
     color: #ffffff
+}
+
+.phone-number {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .footer-navigation ul {
@@ -1470,11 +1483,11 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social li {
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 .footer-social li:last-child {
-    margin-right: 0;
+    margin-right: 2px;
 }
 
 .social-button {
@@ -1752,7 +1765,7 @@ input[type="radio"].visually-hidden {
 
 .filters h3 {
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 12px;
     padding-left: 20px;
     font: 13px/38px "PT Sans", Arial, sans-serif;
     background-color: #f7f3ec;
@@ -1765,7 +1778,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter legend {
-    margin-bottom: 17px;
+    margin-bottom: 12px;
     font: 17px/30px "PT Sans", Arial, sans-serif;
     font-weight: bold;
 }
@@ -1800,7 +1813,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     width: 20px;
     height: 23px;
-    right: 0;
+    right: 19px;
     top: -9px;
     background: url("../img/filter-button.svg") no-repeat;
 }
@@ -1837,7 +1850,7 @@ input[type="radio"].visually-hidden {
 
 .filter .brand-fieldset {
     margin-bottom: 17px;
-    padding-bottom: 25px;
+    padding-bottom: 21px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1855,9 +1868,10 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
     width: 140px;
-    margin-top: 65px;
+    margin-top: 78px;
     font: 13px/34px "PT Sans", Arial, sans-serif;
     text-align: center;
+    text-transform: uppercase;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     background-color: transparent;
@@ -1932,7 +1946,6 @@ input[type="radio"].visually-hidden {
     margin: 0;
     margin-right: 21px;
     margin-left: 46px;
-    opacity: 0.3;
 }
 
 .sorting-list-indicator a {
@@ -1948,12 +1961,12 @@ input[type="radio"].visually-hidden {
     margin-left: 0;
 }
 
-.active-indicator {
-    opacity: 1;
-}
-
 .active-indicator polygon {
     fill: #ee3643;
+}
+
+.sorting-list-indicator a:hover polygon {
+    fill: #231f20;
 }
 
 .product-cards {
@@ -1977,11 +1990,13 @@ input[type="radio"].visually-hidden {
     position: relative;
     width: 220px;
     margin-bottom: 20px;
+    padding-top: 11px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.product-cards__item .flag {
+.product-cards__item .flag,
+.popular-goods__item .flag {
     position: absolute;
     top: -1px;
     right: -1px;
@@ -1992,7 +2007,8 @@ input[type="radio"].visually-hidden {
     z-index: 5;
 }
 
-.product-cards__item .flag-new {
+.product-cards__item .flag-new,
+.popular-goods__item .flag-new {
     background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
@@ -2046,7 +2062,7 @@ input[type="radio"].visually-hidden {
 }
 
 .action-bookmark:hover {
-    border-color: #000000;
+    border-color: #32425c;
 }
 
 .action-bookmark:active {
@@ -2110,7 +2126,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-product {
-    padding-bottom: 53px;
+    padding-bottom: 56px;
     background-color: #f2f6f8;
 }
 
@@ -2122,7 +2138,7 @@ input[type="radio"].visually-hidden {
 
 .about-product h2 {
     margin-top: 63px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
@@ -2343,15 +2359,17 @@ input[type="radio"].visually-hidden {
     top: 300px;
     left: 50%;
     margin-left: -470px;
-    max-width: 940px;
+    width: 940px;
+    height: 447px;
+    background-color: #eeeae3;
+    -webkit-box-shadow: 0 5px 20px 5px rgba(41, 52, 73, 0.5);
+    box-shadow: 0 5px 20px 5px rgba(41, 52, 73, 0.5);
 }
 
 .modal-map iframe {
     position: relative;
     z-index: 5;
     border: none;
-    -webkit-box-shadow: 0 5px 20px 5px rgba(41, 52, 73, 0.5);
-    box-shadow: 0 5px 20px 5px rgba(41, 52, 73, 0.5);
 }
 
 .modal-map a {
